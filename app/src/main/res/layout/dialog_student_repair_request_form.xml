@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yêu cầu sửa chữa"
+        android:textSize="20sp"
+        android:textColor="@color/primary_color"
+        android:textStyle="bold"
+        android:layout_marginStart="8dp"
+        android:layout_gravity="center" />
+
+    <!-- Room Number Field -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên yêu cầu"
+        android:textColor="@color/primary_text_color"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập tên yêu cầu"
+        android:inputType="text"
+        android:backgroundTint="@color/primary_color"
+        android:padding="12dp"
+        android:textColor="@color/primary_text_color"
+        android:layout_marginTop="4dp" />
+
+    <!-- Description Field -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mô tả"
+        android:textColor="@color/primary_text_color"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/edt_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mô tả sự cố cần khắc phục..."
+        android:inputType="textMultiLine"
+        android:minHeight="100dp"
+        android:backgroundTint="@color/primary_color"
+        android:padding="12dp"
+        android:textColor="@color/primary_text_color"
+        android:layout_marginTop="4dp" />
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gửi yêu cầu"
+        android:backgroundTint="@color/primary_color"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp" />
+</LinearLayout>

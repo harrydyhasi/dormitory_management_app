@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    app:contentPadding="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:gravity="start"
+            >
+
+            <!-- Row for Name and Status Badge -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/txt_request_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yêu cầu gia hạn"
+                    android:textSize="16sp"
+                    android:textColor="@color/dark_blue"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingBottom="4dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"/>
+                <!-- Status Badge -->
+
+
+
+            </LinearLayout>
+
+            <!-- Content Section -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:paddingTop="8dp"
+            android:text="Sinh viên: "
+            android:textColor="@color/light_blue"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/txt_name_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:paddingTop="8dp"
+            android:text="name"
+            android:textColor="@color/dark_blue"
+            android:textSize="16sp"
+            android:layout_marginStart="8dp"/>
+
+    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:paddingTop="8dp"
+                    android:text="Tòa: "
+                    android:textColor="@color/light_blue"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/txt_building_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:paddingTop="8dp"
+                    android:text="name"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="16sp"
+                    android:layout_marginStart="8dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:paddingTop="8dp"
+                    android:text="Phòng: "
+                    android:textColor="@color/light_blue"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/txt_room_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:paddingTop="8dp"
+                    android:text="name"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="16sp"
+                    android:layout_marginStart="8dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:paddingTop="8dp"
+                    android:text="Từ ngày:"
+                    android:textColor="@color/light_blue"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txt_start_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:paddingTop="8dp"
+                    android:text="Từ ngày:"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="8dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:paddingTop="8dp"
+                    android:text="Đến ngày:"
+                    android:textColor="@color/light_blue"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txt_end_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:paddingTop="8dp"
+                    android:text="Đến ngày:"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="8dp">
+
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:textColor="#FFFFFF"
+                    app:cornerRadius="5dp"
+                    android:backgroundTint="@color/light_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Duyệt"
+                    android:layout_gravity="center"
+                    android:textAllCaps="false"
+                    android:id="@+id/btn_approved"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    />
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:textColor="#FFFFFF"
+                    app:cornerRadius="5dp"
+                    android:backgroundTint="@color/design_default_color_error"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Từ chối"
+                    android:layout_gravity="center"
+                    android:textAllCaps="false"
+                    android:id="@+id/btn_rejected"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="16dp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+

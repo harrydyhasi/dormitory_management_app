@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">dormitory_management</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_infor_student">Thông tin sinh viên</string>
+    <string name="infor_student_tab_common">Chung</string>
+    <string name="infor_student_tab_stay">Lưu trú</string>
+    <string name="infor_student_change_password">Thay đổi mật khẩu</string>
+    <string name="tab_common_full_name">Họ và tên</string>
+    <string name="tab_common_email">Email</string>
+    <string name="tab_common_ID">CCCD</string>
+    <string name="tab_common_gender">Giới tính</string>
+    <string name="tab_common_number_phone">Số điện thoại</string>
+    <string name="tab_common_date">Ngày sinh</string>
+    <string name="student_old_pass">Mật khẩu cũ</string>
+    <string name="student_new_pass">Mật khẩu mới</string>
+    <string name="student_confirm_pass">Xác nhận mật khẩu</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+    <string name="no_data">No data</string>
+    <string name="danh_sach_sinh_vien">Danh sách sinh viên:</string>
+    <string name="select_start_date">Từ ngày</string>
+    <string name="select_end_date">Đến ngày</string>
+    <string name="error_select_date">Vui lòng chọn ngày bắt đầu và ngày kết thúc</string>
+
+
+    <string-array name="user_roles">
+            <item>Quản trị viên</item>
+            <item>Quản lý</item>
+            <item>Sinh viên</item>
+        </string-array>
+
+        <string-array name="user_status">
+            <item>Active</item>
+            <item>Inactive</item>
+        </string-array>
+
+</resources>

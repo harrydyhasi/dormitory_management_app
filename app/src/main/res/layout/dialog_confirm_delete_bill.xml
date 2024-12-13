@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@android:color/transparent"
+    android:layout_marginTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/style_dialog">
+
+        <TextView
+            android:id="@+id/txtDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xóa hóa đơn"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginTop="15dp"
+
+            />
+        <TextView
+            android:id="@+id/txtDelete1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="Bạn có chắc chắn muốn xóa hóa đơn này?"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            >
+
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#7E8187"
+                android:text="Hủy" />
+            <Button
+                android:id="@+id/btnYes"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#FF0000"
+                android:text="Xóa"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/warning"
+        android:layout_gravity="center|top"/>
+</FrameLayout>

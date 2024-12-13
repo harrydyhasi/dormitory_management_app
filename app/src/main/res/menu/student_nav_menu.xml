@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_student_information"
+            android:icon="@drawable/person"
+            android:title="Thông tin sinh viên"/>
+
+        <item
+            android:id="@+id/nav_student_bill"
+            android:icon="@drawable/bill"
+            android:title="Hóa đơn, biên lai"/>
+
+        <item
+            android:id="@+id/nav_student_repair_request"
+            android:icon="@drawable/setting"
+            android:title="Yêu cầu sửa chữa"/>
+        <item
+            android:id="@+id/nav_student_return_room_request"
+            android:icon="@drawable/autorenew"
+            android:title="Yêu cầu trả phòng"/>
+        <item
+            android:id="@+id/nav_student_renew_request"
+            android:icon="@drawable/renewal"
+            android:title="Gia hạn phòng ở"/>
+    </group>
+    <item
+        android:title="">
+
+        <menu>
+            <item
+                android:id="@+id/nav_student_logout"
+                android:icon="@drawable/logout"
+                android:title="Đăng xuất"/>
+        </menu>
+
+    </item>
+
+</menu>

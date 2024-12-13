@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".student.activities.PaymentActivity"
+    android:background="@color/white">
+    <androidx.appcompat.widget.Toolbar
+        android:background="@color/dark_blue"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:elevation="4dp"
+        android:gravity="left"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        tools:ignore="HardcodedText,RtlHardcoded">
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="8dp"
+            app:contentPadding="20dp"
+            app:cardCornerRadius="8dp"
+            android:layout_margin="8dp"
+            >
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:text="Quét mã QR để thanh toán"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:paddingBottom="8dp"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:paddingHorizontal="20dp"
+                    android:src="@drawable/qr_code_bidv"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:text="KÝ TÚC XÁ SINH VIÊN"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:paddingBottom="8dp"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:text="NGÂN HÀNG: BIDV"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/grey"
+                    android:paddingBottom="8dp"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:text="SỐ TÀI KHOẢN: 3144274196"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/grey"
+                    android:paddingBottom="8dp"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+
+</LinearLayout>

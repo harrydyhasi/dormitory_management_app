@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".auth.RoomSelectionActivity">
+
+    <TextView
+        android:id="@+id/tv_date_range"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngày bắt đầu: --/--/--, Ngày hết hạn: --/--/--"
+        android:paddingStart="4dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/light_blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_margin="12dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewRooms"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_next_to_register"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Tiếp tục"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/light_blue"
+        android:textStyle="bold"
+        app:cornerRadius="16dp"
+        tools:layout_editor_absoluteX="10dp"
+        android:textAllCaps="false"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_back_to_login"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Quay lại"
+        android:textSize="16sp"
+        android:textColor="@color/light_blue"
+        android:textStyle="bold"
+        app:cornerRadius="16dp"
+        app:strokeColor="@color/light_blue"
+        tools:layout_editor_absoluteX="10dp"
+        android:textAllCaps="false"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        />
+</LinearLayout>

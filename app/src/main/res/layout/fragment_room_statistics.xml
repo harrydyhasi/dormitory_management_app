@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F4F4F4">
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:id="@+id/tv_statistics_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thống kê phòng"
+        android:textSize="20sp"
+        android:textColor="#333"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:textStyle="bold"/>
+
+    <!-- Biểu đồ thống kê -->
+    <com.example.dormitory_management.admin.RoomChartView
+        android:id="@+id/roomChartView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Các thông tin thống kê (số phòng còn chỗ, hết chỗ) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tv_available_rooms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Còn chỗ: 0"
+            android:textSize="16sp"
+            android:textColor="#4CAF50"
+            android:layout_marginEnd="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_full_rooms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hết chỗ: 0"
+            android:textSize="16sp"
+            android:textColor="#F44336"/>
+    </LinearLayout>
+
+</LinearLayout>

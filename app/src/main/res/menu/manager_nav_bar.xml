@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_manager_approve_registration"
+            android:icon="@drawable/done"
+            android:title="Duyệt yêu cầu đăng ký" />
+        <item
+            android:id="@+id/nav_manager_room_info_management"
+            android:icon="@drawable/room"
+            android:title="Quản lý thông tin phòng ở" />
+        <item
+            android:id="@+id/nav_manager_dormitory_lookup"
+            android:icon="@drawable/search"
+            android:title="Tra cứu thông tin" />
+        <item
+            android:id="@+id/nav_manager_update_utility"
+            android:icon="@drawable/edit"
+            android:title="Cập nhật điện nước" />
+        <item
+            android:id="@+id/nav_manager_repair_request"
+            android:icon="@drawable/setting"
+            android:title="Yêu cầu sửa chữa" />
+
+        <item
+            android:id="@+id/nav_manager_renewal"
+            android:icon="@drawable/renewal"
+            android:title="Gia hạn phòng ở" />
+        <item
+            android:id="@+id/nav_manager_return_room"
+            android:icon="@drawable/autorenew"
+            android:title="Yêu cầu trả phòng" />
+
+    </group>
+    <item
+        android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_manager_logout"
+                android:icon="@drawable/logout"
+                android:title="Đăng xuất"/>
+        </menu>
+
+    </item>
+
+</menu>

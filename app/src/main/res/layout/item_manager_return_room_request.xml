@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="8dp"
+        android:elevation="10dp"
+        android:radius="10dp"
+        android:backgroundTint="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="start">
+
+            <!-- Row for Name and Status Badge -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <!-- Room Number Section -->
+                <TextView
+                    android:id="@+id/txt_request_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yêu cầu trả phòng"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingBottom="4dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"/>
+                <!-- Status Badge -->
+                <TextView
+                    android:id="@+id/txt_status_badge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chờ duyệt"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/status_badge_bg"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="6dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical">
+
+                <!-- Room Number Section -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Họ và Tên:"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingBottom="4dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"/>
+                <!-- Status Badge -->
+                <TextView
+                    android:id="@+id/txt_fullName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="Nguyễn Văn A"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="sans-serif"
+                    android:paddingBottom="4dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical">
+
+                <!-- Room Number Section -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tòa:"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingBottom="4dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"/>
+                <!-- Status Badge -->
+                <TextView
+                    android:id="@+id/txt_buildingNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="123"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="sans-serif"
+                    android:paddingBottom="4dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical">
+
+                <!-- Room Number Section -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Số phòng:"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingBottom="4dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"/>
+                <!-- Status Badge -->
+                <TextView
+                    android:id="@+id/txt_roomNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="1103"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="sans-serif"
+                    android:paddingBottom="4dp" />
+
+            </LinearLayout>
+
+            <!-- Content Section -->
+            <TextView
+                android:id="@+id/txt_return_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ngày trả phòng:"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:fontFamily="sans-serif"
+                android:paddingTop="8dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="8dp">
+
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:textColor="#FFFFFF"
+                    app:cornerRadius="5dp"
+                    android:backgroundTint="@color/light_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Duyệt"
+                    android:layout_gravity="center"
+                    android:textAllCaps="false"
+                    android:id="@+id/btn_approved"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    />
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:textColor="#FFFFFF"
+                    app:cornerRadius="5dp"
+                    android:backgroundTint="@color/design_default_color_error"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Từ chối"
+                    android:layout_gravity="center"
+                    android:textAllCaps="false"
+                    android:id="@+id/btn_rejected"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="16dp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
+

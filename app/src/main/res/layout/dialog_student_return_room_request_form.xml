@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yêu cầu trả phòng"
+        android:textSize="20sp"
+        android:textColor="@color/primary_color"
+        android:textStyle="bold"
+        android:layout_marginStart="8dp"
+        android:layout_gravity="center" />
+
+    <!-- Date Picker Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/txt_return_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Chọn ngày trả phòng"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/primary_text_color" />
+
+        <ImageButton
+            android:id="@+id/btn_date_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_my_calendar"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Date Picker" />
+    </LinearLayout>
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gửi yêu cầu"
+        android:backgroundTint="@color/primary_color"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp" />
+</LinearLayout>
